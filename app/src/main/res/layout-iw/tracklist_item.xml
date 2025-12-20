@@ -46,51 +46,19 @@
         </TextView>
 
         <TextView
-            android:id="@+id/trackmgr_item_waypoints"
+            android:id="@+id/trackmgr_item_stats"
             style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/trackmgr_item_nameordate"
-            android:text="@string/trackmgr_waypoints_count"
-            android:textStyle="bold" >
-        </TextView>
-
-        <TextView
-            android:id="@+id/trackmgr_item_wps"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/trackmgr_item_nameordate"
+            android:text="Wpts: 0 | Trkpts: 0"
             android:layout_marginRight="3dp"
-            android:layout_toLeftOf="@+id/trackmgr_item_waypoints"
-            android:text="{x}" >
+            android:layout_marginTop="2dp" >
         </TextView>
-
-        <TextView
-            android:id="@+id/trackmgr_item_trackpoints"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/trackmgr_item_nameordate"
-            android:layout_marginRight="15dp"
-            android:layout_toLeftOf="@+id/trackmgr_item_wps"
-            android:text="@string/trackmgr_trackpoints_count"
-            android:textStyle="bold" >
-        </TextView>
-
-        <TextView
-            android:id="@+id/trackmgr_item_tps"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/trackmgr_item_nameordate"
-            android:layout_marginRight="3dp"
-            android:layout_toLeftOf="@+id/trackmgr_item_trackpoints"
-            android:text="{y}" >
-        </TextView>
+        
     </RelativeLayout>
-
+    
     <TextView
         android:id="@+id/trackmgr_item_id"
         style="@android:style/TextAppearance.Medium"

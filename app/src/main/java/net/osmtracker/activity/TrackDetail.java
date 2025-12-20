@@ -138,20 +138,21 @@ public class TrackDetail extends TrackDetailEditor implements AdapterView.OnItem
 		String from[] = new String[]{ITEM_KEY, ITEM_VALUE};
 		int[] to = new int[] {R.id.trackdetail_item_key, R.id.trackdetail_item_value};
 		
-		// Waypoint count
+		// Waypoints - Trackpoint
 		final int wpCount = t.getWpCount();
+		final int tpCount = t.getTpCount();
+
 		trackHasWaypoints = (wpCount > 0);
 		List<HashMap<String, String>> data = new ArrayList<HashMap<String, String>>();
+
 		HashMap<String, String> map = new HashMap<String, String>();
-		map.put(ITEM_KEY, getResources().getString(R.string.trackmgr_waypoints_count));
-		map.put(ITEM_VALUE, Integer.toString(wpCount));
-		data.add(WP_COUNT_INDEX, map);
-		
-		// Trackpoint count
-		map = new HashMap<String, String>();
-		map.put(ITEM_KEY, getResources().getString(R.string.trackmgr_trackpoints_count));
-		map.put(ITEM_VALUE, Integer.toString(t.getTpCount()));
-		data.add(map);
+
+		String infoCombinate = getResources().getString(R.string.trackmgr_stats_combined, wpCount, tpCount);
+
+		map.put(ITEM_KEY, "Information");
+		map.put(ITEM_VALUE, infoCombinate); 
+
+		data.add(WP_COUNT_INDEX, map); 
 
 		// Start date
 		map = new HashMap<String, String>();
