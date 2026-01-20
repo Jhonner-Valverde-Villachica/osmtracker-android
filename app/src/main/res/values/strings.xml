@@ -31,7 +31,7 @@
     <!-- Track Manager -->
     <string name="trackmgr">Track manager</string>
     <string name="trackmgr_tracklist">Track list:</string>
-    <string name="trackmgr_stats_combined">Wpts: %1$d • Trkpts: %2$d</string>
+    <string name="trackmgr_stats_combined">Waypoints: %1$d \u00A0\u00A0\u00A0 Trackpoints: %2$d</string>
     <string name="trackmgr_empty">You don\'t have any tracks.</string>
     <string name="trackmgr_newtrack_hint">Press to record a new track.</string>
     <string name="trackmgr_newtrack_error">Unable to create a new track: {0}</string>
